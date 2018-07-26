@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/direction_card_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="2dp"
+        card_view:cardElevation="2dp"
+        card_view:cardUseCompatPadding="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/textpadding_small"
+            android:orientation="horizontal">
+            <ImageView
+                android:id="@+id/priority_viewLeft"
+                android:layout_width="5dp"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="@dimen/textpadding_small" />
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="@dimen/textpadding_normal"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/todo_detail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="3dp"
+                    android:layout_weight="8"
+                    android:orientation="vertical"
+                    android:weightSum="2">
+                    <ImageView
+                        android:id="@+id/priority_view"
+                        android:layout_width="match_parent"
+                        android:layout_height="5dp"
+                        android:layout_marginRight="@dimen/textpadding_small" />
+
+                    <TextView
+                        android:id="@+id/todo_title"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="start"
+                        android:maxLines="1"
+                        android:paddingBottom="@dimen/textpadding_small"
+                        android:paddingLeft="10dp"
+                        android:paddingTop="@dimen/textpadding_small"
+                        android:text="@string/app_name"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/todo_desc"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:maxLines="2"
+                        android:paddingLeft="10dp"
+                        android:paddingTop="@dimen/textpadding_small"
+                        android:text="android is a good programming language.google support this is called good and engouh" />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_above="@+id/post_date"
+                        android:orientation="horizontal"
+                        android:gravity="left"
+                        android:layout_marginTop="@dimen/textpadding_normal"
+
+                        android:paddingLeft="5dp">
+
+                        <ImageView
+                            android:id="@+id/profile"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:padding="3dp"
+                            android:layout_marginTop="@dimen/textpadding_small"
+                            android:src="@drawable/ic_date"/>
+
+                        <TextView
+                            android:id="@+id/date_card"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="@dimen/textpadding_small"
+                            android:gravity="top"
+                            android:text="thawzintoe"
+                            android:paddingTop="5dp" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/todolist_task"
+                    android:layout_width="70dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:background="#16a085"
+                    android:scaleType="center"
+                    android:src="@drawable/ic_done" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+</LinearLayout>

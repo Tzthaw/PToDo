@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="@layout/activity_event_cards"
+    android:layout_marginBottom="@dimen/textpadding_normal"
+    android:orientation="horizontal">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="75dp"
+        android:orientation="vertical"
+        android:layout_marginRight="3dp"
+        android:layout_weight="8"
+        android:weightSum="2">
+        <TextView
+            android:id="@+id/todo_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorPrimary"
+            android:textSize="16sp"
+            android:paddingLeft="10dp"
+            android:paddingTop="@dimen/textpadding_small"
+            android:maxLines="1"
+            android:paddingBottom="@dimen/textpadding_small"
+            android:textStyle="bold"
+            android:text="@string/app_name"
+            android:gravity="start" />
+        <TextView
+            android:id="@+id/todo_desc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:maxLines="2"
+            android:paddingLeft="10dp"
+            android:paddingTop="@dimen/textpadding_small"
+            android:text="android is a good programming language.google support this is called good and engouh"/>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/todo_task"
+        android:layout_width="70dp"
+        android:layout_height="match_parent"
+        android:scaleType="center"
+        android:layout_gravity="center"
+        android:src="@drawable/ic_done"
+        android:background="#16a085" />
+</LinearLayout>

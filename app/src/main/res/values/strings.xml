@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">P-ToDo</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="nav_item_home">"Event"</string>
+    <string name="nav_new_note">"new Note"</string>
+    <string-array name="nav_drawer_labels">
+        <item>@string/nav_item_home</item>
+        <item>@string/nav_new_note</item>
+    </string-array>
+    <string-array name="nav_drawer_images">
+        <item>@drawable/ic_event</item>
+        <item>@drawable/ic_create</item>
+    </string-array>
+</resources>
